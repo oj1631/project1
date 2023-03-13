@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+       const float_top = document.getElementById("float_top");
+
+float_top.addEventListener("click", () => {
+  const scrollStep = -window.scrollY / 30;
+  const scrollInterval = setInterval(() => {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 20);
+});
+
+    </script>
+
+   
+    <style>
+      @font-face{
+        font-family: 'pretendard-Regular';
+        src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format('woff2');
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      *{
+        font-family: "Pretendard-Regular";
+      }
+      
+      .head_body {
+        margin: 0px;
+        padding: 0px;
+      }
+        
+      .top {
+        width: 1903px;
+        height: 510px;
+        border: 1px solid black;
+        font-size: 20pt;
+        position: relative;
+        background-size: 1903px;
+        background-position: center;
+      }
+
+      .top1 {
+        display: flex;
+        position: absolute;
+      }
+      
+      .head1 {
+        display: flex;
+        border: 0px solid red;
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+      
+      .head1 a {
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      .menu {
+        position: relative;
+        font-weight: bold;
+      }
+      .bu1 {
+        width: 100px;
+        height: 50px;
+        background-color: orange;
+        color: white;
+        border: 0px;
+        border-radius: 10px;
+      }
+      .bu2 {
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        color: white;
+        border: 0px;
+        border-radius: 10px;
+      }
+      .footer-wrap {
+        background-color: black;
+        color: white;
+      }
+      .footer-box a{
+        padding-left: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+      }
+      .footer-box {
+        text-align: center;
+      }
+      .footer-content {
+        text-align: center;
+        padding: 5px;
+      }
+    a.float_top {
+    display: scroll;
+    width: 60px;
+    height: 60px;
+    border-top: 1px solid #ddd;
+    background: url(./images/top_button.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    float: right;
+}
+    </style>
+  </head>
+  <body class="head_body">
+    <form>
+      <div class="top">
+        <div class="top1">
+          <img src="./images/earth.jpg" alt="" />
+
+          <div class="head1">
+            <a href="" style="text-decoration: none">우주여행사</a>
+            <div>
+              <a href="" style="text-decoration: none">회원가입</a>
+              <a href="" style="text-decoration: none">로그인</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu" id="menu" align="center">
+          <p style="color: white;">전세계 간편한 최초 우주여행</p>
+          <br /><br />
+          <div class="menu1">
+            <button class="bu1" onclick="">추천여행</button>
+            <button class="bu2" onclick="">전체메뉴</button>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <footer>
+        <div class="footer-wrap">
+          <div class="footer-box" >
+            <a href="#" style="font-size: 20pt;">Universe Travel</a> &nbsp &nbsp
+            <a href="#">이용약관</a>  &nbsp&nbsp&nbsp&nbsp&nbsp | 
+            <a href="#">여행약관</a>  &nbsp&nbsp&nbsp&nbsp&nbsp |
+            <a href="#">여행자보험</a>&nbsp&nbsp&nbsp&nbsp&nbsp | 
+            <a href="#">대리점안내</a>&nbsp&nbsp&nbsp&nbsp&nbsp |
+            <a href="#">오시는 길</a>
+          </div>
+          <br />
+          <div class="footer-content">
+            대표이사: 우주국 | 주소: 서울특별시 화성구 화성로 250, 화성빌딩
+            <br />
+            사업자등록번호: 102-44-12345 | 관광사업자등록증번호:
+            제2006-00002호<br />
+            개인정보관리책임자: 화성국(univer123@naber.com)
+            <p></p>
+            COPYRIGHT (C) (주)우주신화 ALL RIGHTS RESERVED.
+          </div>
+        </div>
+      </footer>
+    </form>
+   <a href="#menu" class="float_top"><img src="./images/top_button.png" alt=""></a>
+ 
+  </body>
+</html>

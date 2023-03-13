@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+        #scrollBtn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 15px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      </style>
+   
+</head>
+<body>
+    <img src="./images/top_button.png" id="scrollBtn" alt="">
+ 
+    <!-- 스크롤버튼 -->  
+     <script>
+        const scrollBtn = document.getElementById("scrollBtn");
+       scrollBtn.addEventListener("click", () => {
+       const scrollStep = -window.scrollY / 10;
+       const scrollInterval = setInterval(() => {
+       if (window.scrollY !== 0) {
+         window.scrollBy(0, scrollStep);
+       } else {
+         clearInterval(scrollInterval);
+       }
+         }, 20);
+       });
+       </script>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       v
+       dddddddddddd <br>
+       v
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       dddddddddddd <br>
+       v
+       
+
+</body>
+</html>

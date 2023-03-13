@@ -1,0 +1,27 @@
+@font-face{
+    font-family: 'pretendard-Regular';
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  *{
+    font-family: "Pretendard-Regular";
+  }
+  .footer-wrap {
+    background-color: black;
+    color: white;
+  }
+  .footer-box a{
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  .footer-box {
+    text-align: center;
+  }
+  .footer-content {
+    text-align: center;
+    padding: 5px;
+  }
